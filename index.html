@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaleHub</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-container">
+
+      <ul class="top-bar-links list-unstyled visually-hidden">
+        <li><a href="#main-content" class="skip-link">Skip to content</a></li>
+        <li><a href="#" class="top-bar-link">Log in</a></li>
+        <li><a href="#" class="top-bar-link">Register account</a></li>
+        <li><a href="#" class="top-bar-link">Check out</a></li>
+        <li><a href="#" class="top-bar-link">My Wishlist</a></li>
+      </ul>
+      <span class="top-bar-cart visually-hidden">Your cart is currently empty.</span>
+
+      <ul class="top-bar-social list-unstyled">
+        <li>
+          <a href="#" class="top-bar-social-link" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path
+                d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.7c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-bar-social-link" aria-label="Twitter">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path
+                d="M22 5.8c-.7.3-1.5.6-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.7 1a4.2 4.2 0 0 0-7.2 3.8 12 12 0 0 1-8.6-4.4 4.2 4.2 0 0 0 1.3 5.6 4 4 0 0 1-1.9-.5 4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.5a12 12 0 0 0 6.5 1.9c7.7 0 12-6.4 12-12v-.6c.8-.6 1.5-1.3 2-2.1z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-bar-social-link" aria-label="Pinterest">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path
+                d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9.2-.8 1.1-4.7 1.1-4.7s-.3-.6-.3-1.4c0-1.4.8-2.4 1.8-2.4.8 0 1.2.6 1.2 1.4 0 .8-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.2-1.9 3.2-4.7 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.6 2.1-4.6 4.4 0 .9.3 1.8.7 2.3.1.1.1.2.1.3l-.3 1c-.1.2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.5 7.1-6.5 3.7 0 6.6 2.7 6.6 6.2 0 3.7-2.3 6.7-5.6 6.7-1.1 0-2.1-.6-2.5-1.2 0 0-.5 2-.7 2.5-.2.9-.9 2-1.4 2.7A10 10 0 1 0 12 2z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-bar-social-link" aria-label="Vimeo">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path
+                d="M22 7.4c-.1 2-1.5 4.7-4.2 8.1-2.7 3.6-5 5.4-7 5.4-1.1 0-2.1-1.1-3-3.2L6 12.4c-.7-2.1-1.4-3.2-2.2-3.2-.2 0-.7.3-1.6.9L1 8.6c1.1-1 2.2-2 3.2-3 1.5-1.3 2.6-2 3.4-2 1.7-.2 2.8 1 3.2 3.5.5 2.7.8 4.4 1 5 .5 2.2 1 3.2 1.6 3.2.4 0 1.1-.7 2-2.1.9-1.4 1.4-2.4 1.5-3.2.1-1.1-.3-1.6-1.2-1.6-.4 0-.9.1-1.4.3.9-3 2.7-4.5 5.3-4.4 1.9.1 2.8 1.4 2.7 4z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-bar-social-link" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="top-bar-announcement" role="region" aria-label="Promotional announcement">
+        <button type="button" class="top-bar-arrow" aria-label="Previous announcement">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="15 6 9 12 15 18" />
+          </svg>
+        </button>
+        <span class="top-bar-announcement-text">SIMPLY RETURN IT WITHIN 30 DAYS FOR AN EXCHANGE</span>
+        <button type="button" class="top-bar-arrow" aria-label="Next announcement">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="top-bar-currency-wrap">
+        <select class="top-bar-currency" aria-label="Currency selector">
+          <option value="USD" selected>USD</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container site-header-row">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand site-brand" href="#main-content">Salehub</a>
+
+        <div class="header-controls">
+          <a href="#" class="header-icon" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+              focusable="false">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="header-icon" aria-label="Account">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+              focusable="false">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path>
+            </svg>
+          </a>
+          <a href="#" class="header-icon header-cart" aria-label="My Cart, 0 items">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+              focusable="false">
+              <circle cx="9" cy="21" r="1.5"></circle>
+              <circle cx="18" cy="21" r="1.5"></circle>
+              <path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L23 7H6"></path>
+            </svg>
+            <span class="cart-badge">0</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse site-nav-collapse" id="mainNav">
+          <ul class="navbar-nav site-nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero-banner" aria-label="Trending for men — Denim jaket">
+      <div class="hero-banner-media sh-img-frame sh-img-frame--hero">
+        <img src="images/s-12-2_88fe0e5f-d292-47a5-b4e0-999af1eb9d6a_2048x.jpg"
+          alt="Models wearing denim jackets — Trending for men collection">
+      </div>
+      <div class="hero-banner-overlay">
+        <p class="hero-banner-eyebrow">TRENDING FOR MEN</p>
+        <h1 class="hero-banner-title">DENIM JAKET</h1>
+        <a class="btn hero-banner-cta sh-shop-link" href="#main-content">Shop the collection</a>
+      </div>
+      <button type="button" class="hero-banner-arrow hero-banner-arrow--left" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <polyline points="15 6 9 12 15 18" />
+        </svg>
+      </button>
+      <button type="button" class="hero-banner-arrow hero-banner-arrow--right" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <polyline points="9 6 15 12 9 18" />
+        </svg>
+      </button>
+    </section>
+
+    <section class="hero-collections">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <article class="collection-card">
+              <a href="#main-content" class="collection-card-media sh-img-frame sh-img-frame--portrait">
+                <img src="images/img-12-1_1920x1920.jpg" alt="Denim Jacket Outfits collection">
+                <span class="collection-card-cta sh-shop-link">Shop the collection</span>
+              </a>
+              <div class="collection-card-body">
+                <h3 class="collection-card-title">Denim Jacket Outfits</h3>
+                <p class="collection-card-text">See our top-picks for jean jackets that are oversized, distressed, and
+                  downright cool.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="collection-card">
+              <a href="#main-content" class="collection-card-media sh-img-frame sh-img-frame--portrait">
+                <img src="images/img-12-2_1920x1920.jpg" alt="Women's Coats &amp; Jackets collection">
+                <span class="collection-card-cta sh-shop-link">Shop the collection</span>
+              </a>
+              <div class="collection-card-body">
+                <h3 class="collection-card-title">Women's Coats &amp; Jackets</h3>
+                <p class="collection-card-text">Shop the latest in women's Coats &amp; Jackets from SaleHub. Discover
+                  new trends, explore new arrivals.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="collection-card">
+              <a href="#main-content" class="collection-card-media sh-img-frame sh-img-frame--portrait">
+                <img src="images/img-12-3_1920x1920.jpg" alt="T-Shirt collection">
+                <span class="collection-card-cta sh-shop-link">Shop the collection</span>
+              </a>
+              <div class="collection-card-body">
+                <h3 class="collection-card-title">T-Shirt</h3>
+                <p class="collection-card-text">Find affordable T-shirts for men from our selection of V-neck, crew
+                  neck, striped long-sleeve.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-bar">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-4">
+            <div class="policy-item">
+              <span class="policy-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                  focusable="false">
+                  <path d="M3 11a9 9 0 1 1 2.64 6.36"></path>
+                  <polyline points="3 5 3 11 9 11"></polyline>
+                </svg>
+              </span>
+              <h3 class="policy-title">30 Days Return</h3>
+              <p class="policy-text">Simply return it within 30 days for an exchange.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="policy-item">
+              <span class="policy-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                  focusable="false">
+                  <path d="M1 4h12v11H1z"></path>
+                  <path d="M13 8h4l4 4v3h-8z"></path>
+                  <circle cx="6" cy="18" r="2"></circle>
+                  <circle cx="17" cy="18" r="2"></circle>
+                </svg>
+              </span>
+              <h3 class="policy-title">FREE US DELIVERY</h3>
+              <p class="policy-text">On orders over $200!</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="policy-item">
+              <span class="policy-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                  focusable="false">
+                  <path d="M4 13a8 8 0 0 1 16 0"></path>
+                  <path d="M2 16a2 2 0 0 1 2-2h1v5H4a2 2 0 0 1-2-2z"></path>
+                  <path d="M22 16a2 2 0 0 0-2-2h-1v5h1a2 2 0 0 0 2-2z"></path>
+                  <path d="M20 17v1a3 3 0 0 1-3 3h-3"></path>
+                </svg>
+              </span>
+              <h3 class="policy-title">Support 24/7</h3>
+              <p class="policy-text">Contact us 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-showcase">
+      <div class="container">
+        <h2 class="product-showcase-title text-center">Gotta Have It</h2>
+
+        <ul class="nav nav-tabs product-showcase-tabs justify-content-center" id="showcaseTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="new-arrivals-tab" data-bs-toggle="tab" data-bs-target="#new-arrivals"
+              type="button" role="tab" aria-controls="new-arrivals" aria-selected="true">New Arrivals</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="best-sellers-tab" data-bs-toggle="tab" data-bs-target="#best-sellers"
+              type="button" role="tab" aria-controls="best-sellers" aria-selected="false">Best Sellers</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="on-sale-tab" data-bs-toggle="tab" data-bs-target="#on-sale" type="button"
+              role="tab" aria-controls="on-sale" aria-selected="false">On Sale</button>
+          </li>
+        </ul>
+
+        <div class="product-showcase-carousel">
+          <button type="button" class="product-arrow product-arrow--left" aria-label="Previous products">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </button>
+          <button type="button" class="product-arrow product-arrow--right" aria-label="Next products">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </button>
+
+          <div class="tab-content product-showcase-content" id="showcaseTabContent">
+
+            <div class="tab-pane fade show active" id="new-arrivals" role="tabpanel" aria-labelledby="new-arrivals-tab"
+              tabindex="0">
+              <div class="row row-cols-2 row-cols-lg-4 g-4">
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_03acadda-8612-4062-8e97-25a1650c714f_540x.jpg"
+                        alt="Light wash denim jacket on model">
+                    </a>
+                    <h3 class="product-name">Light Wash Denim Jacket</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$79.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_225b9840-5824-4a66-801e-fa5640519db5_540x.jpg"
+                        alt="Oversized cotton tee in cream">
+                    </a>
+                    <h3 class="product-name">Oversized Cotton Tee</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$32.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_34ccf0b4-eca9-4653-9154-f1d88213386f_540x.jpg" alt="Tailored wool blend coat">
+                    </a>
+                    <h3 class="product-name">Tailored Wool Coat</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$159.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_35559729-bb4f-477a-afbb-d695451b9719_540x.jpg"
+                        alt="High-waisted slim fit jeans">
+                    </a>
+                    <h3 class="product-name">High-Waisted Slim Jeans</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$64.00</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="best-sellers" role="tabpanel" aria-labelledby="best-sellers-tab"
+              tabindex="0">
+              <div class="row row-cols-2 row-cols-lg-4 g-4">
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_423afc51-89a7-412d-b94e-1905f35af736_540x.jpg"
+                        alt="Ribbed knit pullover sweater">
+                    </a>
+                    <h3 class="product-name">Ribbed Knit Sweater</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$58.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_4b6df0cc-511d-4f31-8475-08b1346b1921_540x.jpg"
+                        alt="Pleated midi skirt in black">
+                    </a>
+                    <h3 class="product-name">Pleated Midi Skirt</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$72.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_5c0c329d-da3c-4361-a786-e33ac5ea5498_540x.jpg" alt="Relaxed fit linen shirt">
+                    </a>
+                    <h3 class="product-name">Relaxed Linen Shirt</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$49.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_7bb38758-0669-4713-864a-f6723b07f307_540x.jpg"
+                        alt="Cropped utility jacket in khaki">
+                    </a>
+                    <h3 class="product-name">Cropped Utility Jacket</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$89.00</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="on-sale-tab" tabindex="0">
+              <div class="row row-cols-2 row-cols-lg-4 g-4">
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_8624266d-ffc8-44db-b030-5f62c62138d5_540x.jpg" alt="Floral print summer dress">
+                    </a>
+                    <h3 class="product-name">Floral Summer Dress</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$45.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_96a01a8d-3536-48d8-83ec-6279e0ee6f8e_540x.jpg" alt="Faux leather biker jacket">
+                    </a>
+                    <h3 class="product-name">Faux Leather Biker Jacket</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$98.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_afb70b63-ea30-4380-b7d3-8e5e765569aa_540x.jpg" alt="Striped long-sleeve top">
+                    </a>
+                    <h3 class="product-name">Striped Long-Sleeve Top</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$28.00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="product-card">
+                    <a href="#main-content" class="product-card-media sh-img-frame sh-img-frame--portrait">
+                      <img src="images/1_bc70b428-ba01-434a-87f7-7fc276929722_540x.jpg" alt="Cropped wide-leg trousers">
+                    </a>
+                    <h3 class="product-name">Wide-Leg Cropped Trousers</h3>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                      <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span
+                        class="star" aria-hidden="true">★</span>
+                    </div>
+                    <p class="product-price">$54.00</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lounge-banner">
+      <div class="lounge-banner-media sh-img-frame sh-img-frame--banner">
+        <img src="images/img-12-4_1920x1920.jpg"
+          alt="Model in a white crochet dress by the lake — One Fine Day lounge collection">
+      </div>
+      <div class="lounge-banner-overlay">
+        <div class="container">
+          <div class="lounge-banner-content">
+            <h2 class="lounge-banner-title">
+              <span>One</span>
+              <span>Fine</span>
+              <span>Day</span>
+            </h2>
+            <a class="btn lounge-banner-cta sh-shop-link" href="#main-content">SHOP THE LOUNGE COLLECTION</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-the-look" aria-label="Shop the look">
+      <div class="container">
+        <div class="shop-look-carousel" id="shopLookCarousel">
+
+          <div class="shop-look-slide is-active" role="group" aria-roledescription="slide" aria-label="Look 1 of 3">
+            <div class="row align-items-center g-4 g-lg-5">
+              <div class="col-12 col-lg-7">
+                <div class="shop-look-media sh-img-frame sh-img-frame--portrait">
+                  <img src="images/img-1_7dd86fb4-81ac-4752-840a-f799986aa590_1080x.jpg"
+                    alt="Model in a light wash denim jacket — shop the look">
+                  <button type="button" class="shop-look-hotspot" style="top:24%;left:52%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:50%;left:44%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:74%;left:56%"
+                    aria-label="View product detail"></button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="shop-look-product">
+                  <div class="shop-look-thumb sh-img-frame sh-img-frame--portrait">
+                    <img src="images/1_03acadda-8612-4062-8e97-25a1650c714f_540x.jpg"
+                      alt="Light wash denim jacket">
+                  </div>
+                  <h3 class="shop-look-name">Shimmery mini skirt with ruching</h3>
+                  <p class="shop-look-price">$10.00</p>
+                  <button type="button" class="btn shop-look-cta">Add to bag</button>
+                  <div class="shop-look-dots">
+                    <button type="button" class="shop-look-dot is-active" data-index="0"
+                      aria-label="Show look 1"></button>
+                    <button type="button" class="shop-look-dot" data-index="1" aria-label="Show look 2"></button>
+                    <button type="button" class="shop-look-dot" data-index="2" aria-label="Show look 3"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-look-slide" role="group" aria-roledescription="slide" aria-label="Look 2 of 3">
+            <div class="row align-items-center g-4 g-lg-5">
+              <div class="col-12 col-lg-7">
+                <div class="shop-look-media sh-img-frame sh-img-frame--portrait">
+                  <img src="images/img-2_9c6b0dde-b59b-44ae-812c-0f74862db5dc_1080x.jpg"
+                    alt="Model in a black leather jacket and lace dress — shop the look">
+                  <button type="button" class="shop-look-hotspot" style="top:28%;left:46%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:52%;left:42%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:74%;left:50%"
+                    aria-label="View product detail"></button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="shop-look-product">
+                  <div class="shop-look-thumb sh-img-frame sh-img-frame--portrait">
+                    <img src="images/1_96a01a8d-3536-48d8-83ec-6279e0ee6f8e_540x.jpg"
+                      alt="Black leather biker jacket on a hanger">
+                  </div>
+                  <h3 class="shop-look-name">Shimmery mini skirt with ruching</h3>
+                  <p class="shop-look-price">$10.00</p>
+                  <button type="button" class="btn shop-look-cta">Add to bag</button>
+                  <div class="shop-look-dots">
+                    <button type="button" class="shop-look-dot" data-index="0" aria-label="Show look 1"></button>
+                    <button type="button" class="shop-look-dot is-active" data-index="1"
+                      aria-label="Show look 2"></button>
+                    <button type="button" class="shop-look-dot" data-index="2" aria-label="Show look 3"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-look-slide" role="group" aria-roledescription="slide" aria-label="Look 3 of 3">
+            <div class="row align-items-center g-4 g-lg-5">
+              <div class="col-12 col-lg-7">
+                <div class="shop-look-media sh-img-frame sh-img-frame--portrait">
+                  <img src="images/img-3_d0d56b80-3fd9-4b23-86d5-8d644d12f701_1080x.jpg"
+                    alt="Model in a tailored wool coat — shop the look">
+                  <button type="button" class="shop-look-hotspot" style="top:26%;left:50%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:54%;left:46%"
+                    aria-label="View product detail"></button>
+                  <button type="button" class="shop-look-hotspot" style="top:78%;left:54%"
+                    aria-label="View product detail"></button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="shop-look-product">
+                  <div class="shop-look-thumb sh-img-frame sh-img-frame--portrait">
+                    <img src="images/1_34ccf0b4-eca9-4653-9154-f1d88213386f_540x.jpg"
+                      alt="Tailored wool blend coat">
+                  </div>
+                  <h3 class="shop-look-name">Shimmery mini skirt with ruching</h3>
+                  <p class="shop-look-price">$10.00</p>
+                  <button type="button" class="btn shop-look-cta">Add to bag</button>
+                  <div class="shop-look-dots">
+                    <button type="button" class="shop-look-dot" data-index="0" aria-label="Show look 1"></button>
+                    <button type="button" class="shop-look-dot" data-index="1" aria-label="Show look 2"></button>
+                    <button type="button" class="shop-look-dot is-active" data-index="2"
+                      aria-label="Show look 3"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="our-story">
+      <div class="container">
+        <div class="our-story-text text-center">
+          <p class="our-story-eyebrow">OUR STORY</p>
+          <blockquote class="our-story-quote">
+            <p>Being perfectly well-dressed gives one a tranquillity that no religion can bestow</p>
+          </blockquote>
+          <p class="our-story-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu sem in
+            nisi laoreet pulvinar vitae nec mauris. Curabitur faucibus, arcu vitae fermentum dignissim, lectus risus
+            tincidunt urna, ac vestibulum velit sapien quis odio. Donec sodales, magna nec aliquet rhoncus, est purus
+            dignissim ligula.</p>
+          <a class="our-story-cta sh-shop-link" href="#main-content">All about us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending-brands">
+      <div class="container">
+        <h2 class="brands-title text-center">Trending Brands</h2>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 align-items-center">
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-1_160x160@2x.png" alt="Trending brand logo 1" class="brand-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-2_160x160@2x.png" alt="Trending brand logo 2" class="brand-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-3_160x160@2x.png" alt="Trending brand logo 3" class="brand-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-4_160x160@2x.png" alt="Trending brand logo 4" class="brand-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-5_160x160@2x.png" alt="Trending brand logo 5" class="brand-logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="brand-logo-frame">
+              <img src="images/m-6_160x160@2x.png" alt="Trending brand logo 6" class="brand-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="container">
+        <h2 class="social-title text-center">Let's be friends</h2>
+        <div class="social-lines text-center">
+          <p class="social-line">Follow us: @salehub</p>
+          <p class="social-line">Share your style: #salehubstyle</p>
+          <p class="social-line">Share your pup's style: #salehub</p>
+          <p class="social-line">We obsessively watch those hashtags - share a pic and you might be featured :)</p>
+        </div>
+
+        <div class="social-grid">
+          <a href="#" class="social-tile social-tile--big">
+            <img src="images/lb-7_177acd91-0dbb-4e63-8fe7-2311d1c193e8_720x.png" alt="SaleHub community style photo 1">
+          </a>
+          <a href="#" class="social-tile">
+            <img src="images/lb-1_88ecbdcc-c1c6-47af-9cb5-1f21ebae7c4c_720x.png" alt="SaleHub community style photo 2">
+          </a>
+          <a href="#" class="social-tile">
+            <img src="images/lb-3_243a2a47-8869-47c2-a1b7-ea9163d96e52_720x.png" alt="SaleHub community style photo 3">
+          </a>
+          <a href="#" class="social-tile">
+            <img src="images/lb-4_d1d516ae-775a-453a-a97b-84c9e80f69cd_720x.png" alt="SaleHub community style photo 4">
+          </a>
+          <a href="#" class="social-tile">
+            <img src="images/lb-5_fbd8fa3f-d8a8-4ef1-a023-c348c802ad38_720x.png" alt="SaleHub community style photo 5">
+          </a>
+          <a href="#" class="social-tile">
+            <img src="images/lb-6_a88c6dc9-2f7b-4020-96b1-f01cd6593323_720x.png" alt="SaleHub community style photo 6">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container">
+        <div class="trust-bar-row">
+
+          <div class="trust-bar-cell trust-bar-badges">
+            <span class="trust-badge">
+              <span class="trust-badge-mark">TRUSTe</span>
+              <span class="trust-badge-text">Certified Privacy</span>
+            </span>
+            <span class="trust-badge">
+              <span class="trust-badge-mark">Norton</span>
+              <span class="trust-badge-text">SECURED</span>
+            </span>
+          </div>
+
+          <ul class="trust-bar-cell trust-bar-social list-unstyled">
+            <li>
+              <a href="#" class="trust-social-link" aria-label="Facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.7c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trust-social-link" aria-label="Twitter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M22 5.8c-.7.3-1.5.6-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.7 1a4.2 4.2 0 0 0-7.2 3.8 12 12 0 0 1-8.6-4.4 4.2 4.2 0 0 0 1.3 5.6 4 4 0 0 1-1.9-.5 4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.5a12 12 0 0 0 6.5 1.9c7.7 0 12-6.4 12-12v-.6c.8-.6 1.5-1.3 2-2.1z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trust-social-link" aria-label="Pinterest">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9.2-.8 1.1-4.7 1.1-4.7s-.3-.6-.3-1.4c0-1.4.8-2.4 1.8-2.4.8 0 1.2.6 1.2 1.4 0 .8-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.2-1.9 3.2-4.7 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.6 2.1-4.6 4.4 0 .9.3 1.8.7 2.3.1.1.1.2.1.3l-.3 1c-.1.2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.5 7.1-6.5 3.7 0 6.6 2.7 6.6 6.2 0 3.7-2.3 6.7-5.6 6.7-1.1 0-2.1-.6-2.5-1.2 0 0-.5 2-.7 2.5-.2.9-.9 2-1.4 2.7A10 10 0 1 0 12 2z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trust-social-link" aria-label="Vimeo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M22 7.4c-.1 2-1.5 4.7-4.2 8.1-2.7 3.6-5 5.4-7 5.4-1.1 0-2.1-1.1-3-3.2L6 12.4c-.7-2.1-1.4-3.2-2.2-3.2-.2 0-.7.3-1.6.9L1 8.6c1.1-1 2.2-2 3.2-3 1.5-1.3 2.6-2 3.4-2 1.7-.2 2.8 1 3.2 3.5.5 2.7.8 4.4 1 5 .5 2.2 1 3.2 1.6 3.2.4 0 1.1-.7 2-2.1.9-1.4 1.4-2.4 1.5-3.2.1-1.1-.3-1.6-1.2-1.6-.4 0-.9.1-1.4.3.9-3 2.7-4.5 5.3-4.4 1.9.1 2.8 1.4 2.7 4z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trust-social-link" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="trust-bar-cell trust-bar-payments list-unstyled">
+            <li><span class="payment-badge payment-badge--amex">AMEX</span></li>
+            <li><span class="payment-badge payment-badge--mc">MC</span></li>
+            <li><span class="payment-badge payment-badge--visa">VISA</span></li>
+            <li><span class="payment-badge payment-badge--paypal">PayPal</span></li>
+            <li><span class="payment-badge payment-badge--dbs">DBS</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-top">
+
+        <div class="col-12 col-lg-3 footer-col">
+          <h3 class="footer-col-title">
+            <button class="footer-col-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#footerCol1"
+              aria-expanded="false" aria-controls="footerCol1">
+              <span>Informations</span>
+              <span class="footer-col-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="collapse footer-collapse" id="footerCol1">
+            <ul class="footer-links list-unstyled">
+              <li><a href="#" class="footer-link">Customer Service</a></li>
+              <li><a href="#" class="footer-link">Shipping and Delivery</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Size Charts</a></li>
+              <li><a href="#" class="footer-link">Email Signup</a></li>
+              <li><a href="#" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 footer-col">
+          <h3 class="footer-col-title">
+            <button class="footer-col-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#footerCol2"
+              aria-expanded="false" aria-controls="footerCol2">
+              <span>Customer Support</span>
+              <span class="footer-col-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="collapse footer-collapse" id="footerCol2">
+            <ul class="footer-links list-unstyled">
+              <li><a href="#" class="footer-link">Customer Service</a></li>
+              <li><a href="#" class="footer-link">Shipping and Delivery</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Size Charts</a></li>
+              <li><a href="#" class="footer-link">Email Signup</a></li>
+              <li><a href="#" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 footer-col">
+          <h3 class="footer-col-title">
+            <button class="footer-col-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#footerCol3"
+              aria-expanded="false" aria-controls="footerCol3">
+              <span>Our Shop</span>
+              <span class="footer-col-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="collapse footer-collapse" id="footerCol3">
+            <ul class="footer-links list-unstyled">
+              <li><a href="#" class="footer-link">New Arrivals</a></li>
+              <li><a href="#" class="footer-link">Top Trending</a></li>
+              <li><a href="#" class="footer-link">Autumn Collection</a></li>
+              <li><a href="#" class="footer-link">Back in Stock</a></li>
+              <li><a href="#" class="footer-link">Bikini Tops</a></li>
+              <li><a href="#" class="footer-link">Bikini Bottoms</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 footer-col newsletter">
+          <h3 class="footer-col-title">
+            <button class="footer-col-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#footerCol4"
+              aria-expanded="false" aria-controls="footerCol4">
+              <span>Newsletter</span>
+              <span class="footer-col-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="collapse footer-collapse" id="footerCol4">
+            <p class="newsletter-intro">Get 15% off your first purchase! Plus, be the first to know about sales, new
+              product launches and exclusive offers!</p>
+            <form class="newsletter-form" action="#" method="post">
+              <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input type="email" id="newsletter-email" name="email" class="newsletter-input" required
+                placeholder="Email address">
+              <button type="submit" class="newsletter-submit btn sh-join-btn">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center">
+        <p>Copyright &copy; Vũ Lượng 25211TT0425 2021 Vinovathemes. All rights reserved.</p>
+      </div>
+    </div>
+
+    <a href="#main-content" class="scroll-to-top" aria-label="Back to top">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <polyline points="6 15 12 9 18 15" />
+      </svg>
+    </a>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
